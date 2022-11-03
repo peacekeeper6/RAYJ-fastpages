@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /about/
+permalink: https://peacekeeper6.github.io/RAYJ-final/about/
 title: About
 ---
 This site is built with [fastpages](https://github.com/fastai/fastpages)

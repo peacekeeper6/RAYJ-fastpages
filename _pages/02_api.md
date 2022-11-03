@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /api
+permalink: https://peacekeeper6.github.io/RAYJ-final/api
 title: API
 type: pbl
 week: 6

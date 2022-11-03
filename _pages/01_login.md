@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /login
+permalink: https://peacekeeper6.github.io/RAYJ-final/login
 title: Login
 type: pbl
 week: 2
