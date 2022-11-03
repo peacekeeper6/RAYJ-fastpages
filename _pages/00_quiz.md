@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: quiz
+permalink: /quiz/overview
 title: Quiz
 ---
 <head>
