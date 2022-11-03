@@ -64,7 +64,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/RAYJ-final/quiz/overview">Quiz</a><a class="page-link" href="/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/login">Login</a><a class="page-link" href="/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/api">API</a><a class="page-link" href="/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/search/">Search</a><a class="page-link" href="/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/RAYJ-final/quiz">Quiz</a><a class="page-link" href="/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/login">Login</a><a class="page-link" href="/RAYJ-final/api">API</a><a class="page-link" href="/RAYJ-final/search/">Search</a><a class="page-link" href="/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/about/">About</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -72,72 +72,70 @@ window.onload = wrap_img;
         <head>
     <title>Top Music Platorms</title>
 </head>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;th:block layout:fragment="body" th:remove="tag"&gt;
-&lt;br&gt; &lt;h1 style="color:white;margin-top:3%"&gt;Welcome back! Login or make a new account to get started!&lt;/h1&gt; &lt;br&gt; 
-&lt;center&gt;
-    &lt;form style="color: black"&gt;
-        &lt;label style="margin-top:5%" for="email"&gt;Email Address&lt;/label&gt; &lt;br&gt;
-        &lt;input type="email" class="form-control" style="margin-top:2%;width: 25%" id="email" name="email" required&gt; &lt;br&gt; &lt;br&gt;
-        &lt;label for="pass"&gt;Password (8 characters minimum):&lt;/label&gt; &lt;br&gt;
-        &lt;input type="password" class="form-control" style="margin-top:2%;width: 25%" id="pass" name="password"minlength="8" required&gt; &lt;br&gt; &lt;br&gt;
-        &lt;input type="submit" class="btn btn-outline-dark" value="Log-in"&gt; &lt;br&gt; &lt;br&gt;
-        &lt;div class="divider"&gt;
-            &lt;hr class="left"/&gt;
-            New User?
-            &lt;hr class="right"/&gt;
-            &lt;p&gt; &lt;br&gt;
-                &lt;a href="/signup"&gt; Sign-Up&lt;/a&gt;&lt;/p&gt; &lt;br&gt;
-        &lt;/div&gt;
-    &lt;/form&gt;
-&lt;/center&gt;  
-&lt;/body&gt;
-    &lt;style&gt;
-    h1 {
-        text-align: center;
-        font-size: 24px;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        /* background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF); */
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        background:linear-gradient(#0e071b, #230a4d);
-    }
-    form {
-        width: 50%;
-        height: 95%;
-        background-color: #ffffff;
-        border-radius: 20px;
-        box-shadow: 0px 25px 40px rgb(190, 186, 238);
-    }
-    hr {
-        width: 24%
-    }
-    .left {
-        float:left;
-    } 
-    .right {
-        float:right;
-    }
-    .divider {
-        width:500px;
-        text-align:center;
-    }
-    .divider hr {
-        margin-left:auto;
-        margin-right:auto;
-        width:40%;  
-    }
-    &lt;/style&gt;
-&lt;!-- End of body content specific to page --&gt;
-</code></pre></div></div>
-<p>&lt;/th:block&gt;
-&lt;/body&gt;</p>
+    <th:block layout:fragment="body" th:remove="tag">
+    <br> <h1 style="color:white;margin-top:3%">Welcome back! Login or make a new account to get started!</h1> <br> 
+    <center>
+        <form style="color: black">
+            <label style="margin-top:5%" for="email">Email Address</label> <br>
+            <input type="email" class="form-control" style="margin-top:2%;width: 25%" id="email" name="email" required> <br> <br>
+            <label for="pass">Password (8 characters minimum):</label> <br>
+            <input type="password" class="form-control" style="margin-top:2%;width: 25%" id="pass" name="password"minlength="8" required> <br> <br>
+            <input type="submit" class="btn btn-outline-dark" value="Log-in"> <br> <br>
+            <div class="divider">
+                <hr class="left"/>
+                New User?
+                <hr class="right"/>
+                <p> <br>
+                    <a href="/signup"> Sign-Up</a></p> <br>
+            </div>
+        </form>
+    </center>  
+    </body>
+        <style>
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            /* background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF); */
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(#0e071b, #230a4d);
+        }
+        form {
+            width: 50%;
+            height: 95%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 25px 40px rgb(190, 186, 238);
+        }
+        hr {
+            width: 24%
+        }
+        .left {
+            float:left;
+        } 
+        .right {
+            float:right;
+        }
+        .divider {
+            width:500px;
+            text-align:center;
+        }
+        .divider hr {
+            margin-left:auto;
+            margin-right:auto;
+            width:40%;  
+        }
+        </style>
+    <!-- End of body content specific to page -->
+</th:block>
+</body>
 
-<p>&lt;/html&gt;</p>
-
+</html>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/RAYJ-final/"></data>

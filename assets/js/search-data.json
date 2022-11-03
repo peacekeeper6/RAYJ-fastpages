@@ -646,8 +646,8 @@
       ,"page0": {
           "title": "Quiz",
           "content": "Personality Quiz . Personality Quiz Previous Next",
-          "url": "https://nighthawkcoders.github.io/RAYJ-final/quiz/overview",
-          "relUrl": "/quiz/overview",
+          "url": "https://nighthawkcoders.github.io/RAYJ-final/quiz",
+          "relUrl": "/quiz",
           "date": ""
       }
       
@@ -668,8 +668,8 @@
       ,"page2": {
           "title": "API",
           "content": "| Overview | Covid19 RapidAPI | Jokes API | Database CRUD | . &lt;/div&gt; .",
-          "url": "https://nighthawkcoders.github.io/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/api",
-          "relUrl": "/https:/peacekeeper6.github.io/RAYJ-final/api",
+          "url": "https://nighthawkcoders.github.io/RAYJ-final/api",
+          "relUrl": "/api",
           "date": ""
       }
       
