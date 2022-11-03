@@ -85,8 +85,8 @@ window.onload = wrap_img;
               <tr>
                 <th>Song of the Day</th>
                 <th>Artist</th>
-                <th>Likes</th>
-                <th>Dislikes</th>
+                <!-- <th>Likes</th>
+                <th>Dislikes</th> -->
               </tr>
               </thead>
               <tbody id="result">
@@ -139,8 +139,8 @@ window.onload = wrap_img;
                         // td for each column
                         const title = document.createElement("td");
                         const artist = document.createElement("td");
-                        const image = document.createElement("td");
-                        const award = document.createElement("td");
+                        // const image = document.createElement("td");
+                        // const award = document.createElement("td");
             
                         // data is specific to the API
                         title.innerHTML = row.title;
@@ -151,8 +151,8 @@ window.onload = wrap_img;
                         // this build td's into tr
                         tr.appendChild(title);
                         tr.appendChild(artist);
-                        tr.appendChild(likes);
-                        tr.appendChild(dislikes);
+                        // tr.appendChild(likes);
+                        // tr.appendChild(dislikes);
             
                         // add HTML to container
                         resultContainer.appendChild(tr);
