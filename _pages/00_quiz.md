@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: https://peacekeeper6.github.io/RAYJ-final/quiz
+permalink: quiz
 title: Quiz
 ---
 <head>
