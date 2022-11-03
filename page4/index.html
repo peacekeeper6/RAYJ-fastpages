@@ -131,6 +131,7 @@ window.onload = wrap_img;
             
                       // Country data
                       for (let i = 0; i < 1; i++) {
+                        for (const row of data) {
                         console.log(row);
             
                         // tr for each row
@@ -156,6 +157,7 @@ window.onload = wrap_img;
                         // add HTML to container
                         resultContainer.appendChild(tr);
                       }
+                    }
                   })
               })
               // catch fetch errors (ie ACCESS to server blocked)
