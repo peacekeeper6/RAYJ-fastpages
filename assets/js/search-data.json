@@ -35,6 +35,17 @@
   
     
         ,"post3": {
+            "title": "Anti-Hero by Taylor Swift",
+            "content": "“Anti-hero” . “Taylor Swift scores one of the most historic weeks in the 64-year history of the Billboard Hot 100 songs chart, as she becomes the first artist to claim the survey’s entire top 10 in a single frame. . Swift surpasses Drake, who logged nine of the Hot 100’s top 10 for a week in September 2021. . Leading the way for Swift on the Hot 100, “Anti-Hero” launches at No. 1, marking her ninth career leader.” -Billboard .",
+            "url": "https://nighthawkcoders.github.io/APCSA/points/16",
+            "relUrl": "/points/16",
+            "date": " • Oct 21, 2022"
+        }
+        
+    
+  
+    
+        ,"post4": {
             "title": "We Don't Talk About Bruno",
             "content": "“We don’t talk about Bruno” . “Maybe we’re not allowed to talk about him, but people were definitely listening to “Bruno,” with the secretive, salsa-tinged showstopper becoming only the second Hot 100 No. 1 from a Disney animated film, and the longest-running chart-topper (five weeks) for any song from a Disney movie. The song was built for repeat listening, with mile-a-minute lyrics and its finale of Les Miz-level vocal stacking. It even had its own TikTok trend, thanks to the meme-able way Camilo (Rhenzy Feliz) drawls those spooky “7-foot frame, rats along his back” lines. Basically, Lin-Manuel Miranda figured out how to make a song that perfectly advanced the Family Madrigal’s narrative, while also soundtracking countless school drop-offs and dramatic road-trip sing-alongs.” ~BillBoard .",
             "url": "https://nighthawkcoders.github.io/APCSA/points/16",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "Project Week 2",
             "content": "Plans Week 9 . Focus on PBL - Commitment to your Agile Development process and tangibles. . Monday: Review Student Led Homework (Period 2?) and Blog | Tuesday: Student Presentation | Wednesday: Student Presentation | Thursday: Show FE to BE working, Script for Video | Friday: Student Presentation | . Team . Prepare for Teacher project audit. Also, analysis of the following will speed Scrum Team plan, work, improve quality, and make a better N@tM final. . API Frontend to Backend Overview . Show demo of work in progress. . Must use API across multiple systems Create a HTML Frontend table or view fetching from Backend using an Spring API | Show writing to Database | . | . Scrum Master . Describe Program Purpose and Function. Also, highlight key system used to track, collaborate and review software. . Identify and Apply a Software Development process. Describe your Software Development Life Cycle | Describe how you plan, track sprints, track features, track milestones, and assign versions. | Highlight Agile process: research, design, coding, testing, review, repeat. | . | Define and analyze systems and software requirements. Define Computer Systems you have or will develop. | Indicate Tools or Automation you will use improve tracking requirements (ie Project/Scrum Board). | Define strategies that enable Team to target the specific needs of the customer (ie Product Owner). Describe meetings, demos, and how you collect feedback. | . | Test and Demo Software during each Sprint Consider using GitHub Issues to support this process. | Develop and describe expectations of each feature. | Use feature, expected outcome, and the minimal amount of code each feature. | Document accomplishment with tangible evidence. | Have feature reviews, demos, and obtain feedback (team and/or customer) | Update and derive new features and tasks for next step in Software Development Life Cycle | . | My suggestion is this person helps with Frontend development | . Frontend Developer . Describe Frontend designs and coding techniques. . Create and implement an effective frontend between humans and technology Show frontend design artifacts (wire frames) | Describe any consideration you have made for customer requirements. | Indicate accommodations you have made for English Language Learners or those with Disabilities | Show any screens that are currently developed. | . | Describe Code and Styles Frontend development HTML, Markdown, JavaScript | Cards, Tables, Blogging | . | Comments. Be sure to illustrate developers comments in code and how this will facilitate current and future understanding of the key portions of system. | . DevOps Engineer . Describe the technical systems and processes used to ensure the ability to do continuous updates and integration of software. . Describe software and programming tools Identify authoring tools (IDE’s, Docker, GitHub) used | Describe and/or show visuals of interactions and integration of programming languages, protocols, and data within project. For instance, deployed systems of Docker Images, Nginx, DNS hosting the application. | Describe and/or illustrate key Web Applications, APIs, and dependency systems that will be required to complete this system (Diagram). | . | Describe GitHub branch management and sociology used to ensure ability to perform continuous builds and integrations. GitHub projects | Branching Strategies | Deployment processes and automation | . | Describe how to validate and test the complete system | My suggestion is this person helps with Backend development | . Backend Developer . Describe backend coding and requirements. . Develop data, data types, databases, and APIs. Identify authoring tools (IDE’s, Postman) used. | Describe and/or illustrate key data types, data structures (Lists, Dictionaries), objects, files, or databases that will be used (Flow Chart/UML). | Describe use of Lists or Dictionaries, database, tables, attributes, records, and systems of access (JSON, Lists, Dictionaries). | . | Comments. Be sure developers use comments in code to facilitate current and future understanding of the key portions of system. | . Hacks (Video 1). Recommend… Minimize talking, minimize mouse movements, and share Tangibles. . Make a less than 4 minute video. Each individual should talk in video, code, and make their part of the video. Consider crossing over to other tables and share methods and methodologies of those working on similar roles. . Scrum Master should make sure all things come together. | DevOps should ensure there is a working project to Demo at all times. | Everyone should complete their part(s). | Everyone should help other Team Members when struggling. | .",
             "url": "https://nighthawkcoders.github.io/APCSA/points/9",
@@ -56,19 +67,8 @@
     
   
     
-        ,"post5": {
-            "title": "As it Was ~ Harry Styles",
-            "content": "“Anti-hero” . “Taylor Swift scores one of the most historic weeks in the 64-year history of the Billboard Hot 100 songs chart, as she becomes the first artist to claim the survey’s entire top 10 in a single frame. . Swift surpasses Drake, who logged nine of the Hot 100’s top 10 for a week in September 2021. . Leading the way for Swift on the Hot 100, “Anti-Hero” launches at No. 1, marking her ninth career leader.” -Billboard .",
-            "url": "https://nighthawkcoders.github.io/APCSA/points/16",
-            "relUrl": "/points/16",
-            "date": " • Oct 17, 2022"
-        }
-        
-    
-  
-    
         ,"post6": {
-            "title": "Number 1. Anti-Hero by Taylor Swift",
+            "title": "As it Was ~ Harry Styles",
             "content": "“Anti-hero” . “Taylor Swift scores one of the most historic weeks in the 64-year history of the Billboard Hot 100 songs chart, as she becomes the first artist to claim the survey’s entire top 10 in a single frame. . Swift surpasses Drake, who logged nine of the Hot 100’s top 10 for a week in September 2021. . Leading the way for Swift on the Hot 100, “Anti-Hero” launches at No. 1, marking her ninth career leader.” -Billboard .",
             "url": "https://nighthawkcoders.github.io/APCSA/points/16",
             "relUrl": "/points/16",
