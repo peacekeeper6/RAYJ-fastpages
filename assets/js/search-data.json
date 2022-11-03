@@ -646,8 +646,8 @@
       ,"page0": {
           "title": "Quiz",
           "content": "Personality Quiz . Personality Quiz Previous Next",
-          "url": "https://nighthawkcoders.github.io/APCSA/quiz",
-          "relUrl": "/quiz",
+          "url": "https://nighthawkcoders.github.io/APCSA/quiz/overview",
+          "relUrl": "/quiz/overview",
           "date": ""
       }
       
