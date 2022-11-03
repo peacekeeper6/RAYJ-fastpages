@@ -168,7 +168,7 @@ window.onload = wrap_img;
     "answer3Total": "1"
   },
   {
-    "question": "Which of the following colours do you like most?",
+    "question": "Which of the following colors do you like most?",
     "answer1": "Black",
     "answer1Total": "1",
     "answer2": "Yellow or light blue",
@@ -230,7 +230,6 @@ function loadNextQuestion () {
 
     const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
-    //Finally we incement the current question number ( to be used as the index for each array)
     currentQuestion++;
 
         //once finished clear checked
@@ -239,23 +238,190 @@ function loadNextQuestion () {
     if(currentQuestion == totalQuestions - 1) {
         nextButton.textContent = 'Finish';
     }
-    //If the quiz is finished then we hide the questions container and show the results 
+
+    if($(totalScore) => 1 && <= 3) {
+      yourGenre = "Pop";
+      yourArtists = "You may be more prone than the average person of getting emotional. You may enjoy artists like Frank Ocean, the Weeknd, and Car Seat Headrest."
+    if($(totalScore) => 4 && <= 6) {
+      yourGenre = "Pop";
+      yourArtists = "You're cheerful and a happy spirit to be around. You may enjoy artists like Taylor Swift, Katy Perry, and Panic at the Disco."
+    if($(totalScore) => 7 && <= 9) {
+      yourGenre = "Pop/R&B";
+      yourArtists = "You're extremely calm and make sure that things are in your control first. You may enjoy artists like Clairo, Jhene Aiko, and Jorja Smith."
+    }
+    if($(totalScore) => 10 && <= 12) {
+      yourGenre = "Alternative";
+      yourArtists = "You make timely decisions and know how to manage your decisions based on your circumstances. You may like artists like Thundercat, FKA twigs, and Childish Gambino."
+    }
+    if($(totalScore) => 13 && <= 15) {
+      yourGenre = "Alternative";
+      yourArtists = "You're cool-headed and old people might refer to you as a good soul. You may like artists like Gorillaz, Tame Impala, and Bon Iver."
+      yourSongs = ""
+    }
+    if($(totalScore) => 14 && <= 16) {
+      yourGenre = "Rap/Hip-Hop";
+      yourArtists = "You may have a tendency to be impulsive, but you're also intelligent. You may like artists like Kendrick Lamar, Joey Bada$$, and J. Cole"
+      yourSongs = ""
+    }
+    if($(totalScore) => 17 && <= 19) {
+      yourGenre = "Rap/Hip-Hop";
+      yourArtists = "You're quick to act and make decisions when you know you need to. You may like artists like Travis Scott, Future, and Young Thug"
+      yourSongs = ""
+    }
+    if($(totalScore) => 20 && <= 21) {
+      yourGenre = "Rap/Hip-Hop"
+      yourArtists = "You have likely been referred to as aggressive before (Don't worry, it's not necessarily a bad thing). Some artists you might like are Ski Mask the Slump God, Dababy, and Westside Gunn.
+      yourSongs = ""
+    }
+  
     if(currentQuestion == totalQuestions) {
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Your score: ${totalScore}</h1>
-         <div class="summary">
+         `<h1 class="final-score">Your genre: ${yourGenre}</h1>
+         <div class="summary">${yourArtists}</div>
             <h1>Summary</h1>
-            <p>Possible - Personality Traits, see below for a summary based on your results:</p>
-            <p>15 - 21- You Need Help</p>
-            <p>10 - 15 - Good Soul</p>
-            <p>5 - 10 - Meh </p>
-            <p>5 - Are You Even Real</p>
-        </div>
         <button class="restart">Restart Quiz</button>
          `;
         return;
     }
+<table>
+    <thead>
+    <tr>
+      <th>Likes</th>
+      <th>Dislikes</th>
+    </tr>
+    </thead>
+    <tbody id="result">
+    </tbody>
+  </table>
+    // prepare HTML defined "result" container for new output
+    const resultContainer = document.getElementById("result");
+  
+    // keys for joke reactions
+    const LIKE = "like";
+    const DISLIKE = "dislike";
+  
+    // prepare fetch urls;
+    const url = "https://peacekeeper6.github.io/RAYJ-final/quiz/";
+    // const url = "http://localhost:8080/api/songs/";
+    // const get_url = url +"/";
+    const like_url = url + "/like/";  // like reaction
+    const dislike_url = url + "/dislike/";  // dislike reaction
+  
+    // prepare fetch GET options
+    const options = {
+      method: 'GET', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, *cors, same-origin
+      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'same-origin', // include, same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    };
+    // prepare fetch PUT options, clones with JS Spread Operator (...)
+    const put_options = {...options, method: 'PUT'}; // clones and replaces method
+  
+    // fetch the API
+    fetch(get_url, options)
+      // response is a RESTful "promise" on any successful fetch
+      .then(response => {
+        // check for response errors
+        if (response.status !== 200) {
+            error('GET API response failure: ' + response.status);
+            return;
+        }
+        // valid response will have JSON data
+        response.json().then(data => {
+            console.log(data);
+            for (const row of data) {
+              // make "tr element" for each "row of data"
+              const tr = document.createElement("tr");
+              
+              // td for joke cell
+              const song = document.createElement("td");
+                song.innerHTML = row.id + ". " + row.song;  // add fetched data to innerHTML
+  
+              // td for like cell with onclick actions
+              const like = document.createElement("td");
+                const like_but = document.createElement('button');
+                like_but.id = LIKE+row.id   // establishes a LIKE JS id for cell
+                like_but.innerHTML = row.likes;  // add fetched "like count" to innerHTML
+                like_but.onclick = function () {
+                  // onclick function call with "like parameters"
+                  reaction(LIKE, like_url+row.id, like_but.id);  
+                };
+                like.appendChild(like_but);  // add "like button" to like cell
+  
+              // td for dislike cell with onclick actions
+              const dislike = document.createElement("td");
+                const dislike_but = document.createElement('button');
+                dislike_but.id = DISLIKE+row.id  // establishes a DISLIKE JS id for cell
+                dislike_but.innerHTML = row.dislikes;  // add fetched "dislike count" to innerHTML
+                dislike_but.onclick = function () {
+                  // onclick function call with "jeer parameters"
+                  reaction(DISLIKE, dislike_url+row.id, dislike_but.id);  
+                };
+                dislike.appendChild(dislike_but);  // add "boohoo button" to boohoo cell
+               
+              // this builds ALL td's (cells) into tr (row) element
+              tr.appendChild(song);
+              tr.appendChild(like);
+              tr.appendChild(dislike);
+  
+              // this adds all the tr (row) work above to the HTML "result" container
+              resultContainer.appendChild(tr);
+            }
+        })
+    })
+    // catch fetch errors (ie Nginx ACCESS to server blocked)
+    .catch(err => {
+      error(err + " " + get_url);
+    });
+  
+    // Reaction function to likes or jeers user actions
+    function reaction(type, put_url, elemID) {
+  
+      // fetch the API
+      fetch(put_url, put_options)
+      // response is a RESTful "promise" on any successful fetch
+      .then(response => {
+        // check for response errors
+        if (response.status !== 200) {
+            error("PUT API response failure: " + response.status)
+            return;  // api failure
+        }
+        // valid response will have JSON data
+        response.json().then(data => {
+            console.log(data);
+            // Likes or Jeers updated/incremented
+            if (type === LIKE) // like data element
+              document.getElementById(elemID).innerHTML = data.likes;  // fetched like data assigned to like Document Object Model (DOM)
+            else if (type === DISLIKE) // jeer data element
+              document.getElementById(elemID).innerHTML = data.dislikes;  // fetched dislike data assigned to dislike Document Object Model (DOM)
+            else
+              error("unknown type: " + type);  // should never occur
+        })
+      })
+      // catch fetch errors (ie Nginx ACCESS to server blocked)
+      .catch(err => {
+        error(err + " " + put_url);
+      });
+      
+    }
+  
+    // Something went wrong with actions or responses
+    function error(err) {
+      // log as Error in console
+      console.error(err);
+      // append error to resultContainer
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.innerHTML = err;
+      tr.appendChild(td);
+      resultContainer.appendChild(tr);
+    }
+  
     generateQuestions(currentQuestion);
 }
 
