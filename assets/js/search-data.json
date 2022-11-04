@@ -139,8 +139,8 @@
       ,"page9": {
           "title": "Song Feedback",
           "content": "{% include nav_data.html %} . &lt;/div&gt; &lt;!DOCTYPE HTML&gt; . Songs Table . Songs Table . Song Likes Dislikes . . .",
-          "url": "https://nighthawkcoders.github.io/RAYJ-final/https:/peacekeeper6.github.io/RAYJ-final/songfeedback",
-          "relUrl": "/https:/peacekeeper6.github.io/RAYJ-final/songfeedback",
+          "url": "https://nighthawkcoders.github.io/RAYJ-final/songfeedback",
+          "relUrl": "/songfeedback",
           "date": ""
       }
       
