@@ -81,9 +81,15 @@ window.onload = wrap_img;
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
   .previous, .next {
-    color: white;
+    color: #ffffff;
   }
-  .option1, .option2, .option3, .option {
+  .title {
+    font-size:24px;
+  }
+  .question {
+    font-size:16px;
+  }
+  input[type="radio"] {
   width: 3em;
   height: 3rem;
   accent-color: green;
@@ -92,6 +98,7 @@ window.onload = wrap_img;
   </head>
 
 <body>
+  <center>
     <div class="quiz-container">
         <div class="title">Personality Quiz for Music Recommendations</div>
         <div id="question" class="question"></div>
@@ -115,6 +122,7 @@ window.onload = wrap_img;
     </div>
     <div class="result">
     </div>
+  </center>
 </body>
 
 <script>
