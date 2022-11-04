@@ -264,26 +264,36 @@ function loadNextQuestion () {
     // }
     // if($(totalScore) >= 14 && <= 16) {
     //   yourGenre = "Rap/Hip-Hop";
-    //   yourArtists = "You may have a tendency to be impulsive, but you're also intelligent. You may like artists like Kendrick Lamar, Joey Bada$$, and J. Cole"
+    //   yourArtists = "You may have a tendency to be impulsive, but you're also intelligent. You may like artists like Kendrick Lamar, Joey Bada$$, and J. Cole."
     //   yourSongs = ""
     // }
     // if($(totalScore) >= 17 && <= 19) {
     //   yourGenre = "Rap/Hip-Hop";
-    //   yourArtists = "You're quick to act and make decisions when you know you need to. You may like artists like Travis Scott, Future, and Young Thug"
+    //   yourArtists = "You're quick to act and make decisions when you know you need to. You may like artists like Travis Scott, Future, and Young Thug."
     //   yourSongs = ""
     // }
     // if($(totalScore) >= 20 && <= 21) {
     //   yourGenre = "Rap/Hip-Hop"
-    //   yourArtists = "You have likely been referred to as aggressive before (Don't worry, it's not necessarily a bad thing). Some artists you might like are Ski Mask the Slump God, Dababy, and Westside Gunn.
+    //   yourArtists = "You have likely been referred to as aggressive before (Don't worry, it's not necessarily a bad thing). Some artists you might like are Ski Mask the Slump God, Dababy, and Westside Gunn."
     //   yourSongs = ""
     // }
   
     if(currentQuestion == totalQuestions) {
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Your genre: ${yourGenre}</h1>
-         <div class="summary">${yourArtists}</div>
+        `<h1 class="final-score">Your score: ${totalScore}</h1>
+         <div class="summary">
             <h1>Summary</h1>
+            <p>Music Taste by Score:</p>
+            <p>20 - 21 - Your Genre: Rap/Hip-Hop. You have likely been referred to as aggressive before (Don't worry, it's not necessarily a bad thing). Some artists you might like are Ski Mask the Slump God, Dababy, and Westside Gunn.</p>
+            <p>17 - 19 - Your Genre: Rap/Hip-Hop. You're quick to act and make decisions when you know you need to. You may like artists like Travis Scott, Future, and Young Thug.</p>
+            <p>14 - 16 - Your Genre: Rap/Hip-Hop. You may have a tendency to be impulsive, but you're also intelligent. You may like artists like Kendrick Lamar, Joey Bada$$, and J. Cole.</p>
+            <p>13 - Your Genre: Alternative. You're cool-headed and old people might refer to you as a good soul. You may like artists like Gorillaz, Tame Impala, and Bon Iver.</p>
+            <p>10 - 12 - Your Genre: Alternative. You make timely decisions and know how to manage your decisions based on your circumstances. You may like artists like Thundercat, FKA twigs, and Childish Gambino.</p>
+            <p>7 - 9 - Your Genre: Pop/R&B. You're extremely calm and make sure that things are in your control first. You may enjoy artists like Clairo, Jhene Aiko, and Jorja Smith.</p>
+            <p>4 - 6 -  Your Genre: Pop. You're cheerful and a happy spirit to be around. You may enjoy artists like Taylor Swift, Katy Perry, and Panic at the Disco.</p>
+            <p>1 - 3 -  Your Genre: Pop. You may be more prone to getting emotional than the average person. You may enjoy artists like Frank Ocean, the Weeknd, and Car Seat Headrest.</p>
+        </div>
         <button class="restart">Restart Quiz</button>
          `;
         return;
