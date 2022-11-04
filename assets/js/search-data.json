@@ -126,19 +126,30 @@
   
 
   
-
+      ,"page5": {
+          "title": "Platforms",
+          "content": "&lt;!DOCTYPE HTML&gt; . Top Music Platorms . Top Music Platforms . Spotify . Spotify is a Swedish audio streaming platform and was founded on founded on April 23, 2006 by its creators, Daniel Ek and Martin Lorentzon. As of 2022, Spotify has 433 million active users monthly, listening to the millions of songs and podcasts on its database. | . Click to go to the Spotify Website Apple Music . Apple Music is a platform to stream various audio and video formats of content and was first launched by Apple Inc. on June 30, 2015&quot;. With Apple Music, content can be streamed in lossless quality and downloaded for offline playback. | . Click to go to the Apple Music Website YouTube Music . YouTube Music is a music streaming platform, that was launched by YouTube on November 12, 2015. YouTube Music is free to use, unlike Apple Music and provide the option to upgrade to a YouTube Music premium membership, for ad-free streaming. | . Click to go to the YouTube Music Website .",
+          "url": "https://nighthawkcoders.github.io/RAYJ-final/platforms/",
+          "relUrl": "/platforms/",
+          "date": ""
+      }
+      
   
 
   
 
   
+
   
 
   
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "Song Feedback",
           "content": "{% include nav_data.html %} . &lt;/div&gt; &lt;!DOCTYPE HTML&gt; . Songs Table . Songs Table . Song Likes Dislikes . . .",
           "url": "https://nighthawkcoders.github.io/RAYJ-final/songfeedback",
@@ -158,7 +169,7 @@
   
 
   
-      ,"page14": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nighthawkcoders.github.io/RAYJ-final/robots.txt",

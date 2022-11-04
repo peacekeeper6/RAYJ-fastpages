@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Login | RAYJ Music</title>
+<title>Platforms | RAYJ Music</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Login" />
+<meta property="og:title" content="Platforms" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="RAYJ Music" />
 <meta property="og:description" content="RAYJ Music" />
-<link rel="canonical" href="https://nighthawkcoders.github.io/RAYJ-final/login" />
-<meta property="og:url" content="https://nighthawkcoders.github.io/RAYJ-final/login" />
+<link rel="canonical" href="https://nighthawkcoders.github.io/RAYJ-final/platforms/" />
+<meta property="og:url" content="https://nighthawkcoders.github.io/RAYJ-final/platforms/" />
 <meta property="og:site_name" content="RAYJ Music" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Login" />
+<meta property="twitter:title" content="Platforms" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"RAYJ Music","headline":"Login","url":"https://nighthawkcoders.github.io/RAYJ-final/login"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"RAYJ Music","headline":"Platforms","url":"https://nighthawkcoders.github.io/RAYJ-final/platforms/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/RAYJ-final/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nighthawkcoders.github.io/RAYJ-final/feed.xml" title="RAYJ Music" /><link rel="shortcut icon" type="image/x-icon" href="/RAYJ-final/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,71 +69,83 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <head>
-    <title>Login</title>
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Platforms</h1>
+  </header>
+
+  <div class="post-content">
+    <!DOCTYPE HTML>
+
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/base}" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Top Music Platorms</title>
 </head>
-    <th:block layout:fragment="body" th:remove="tag">
-    <br> <h1 style="color:white;margin-top:3%">Welcome back! Login or make a new account to get started!</h1> <br> 
-    <center>
-        <form style="color: black">
-            <label style="margin-top:5%" for="email">Email Address</label> <br>
-            <input type="email" class="form-control" style="margin-top:2%;width: 25%" id="email" name="email" required> <br> <br>
-            <label for="pass">Password (8 characters minimum):</label> <br>
-            <input type="password" class="form-control" style="margin-top:2%;width: 25%" id="pass" name="password"minlength="8" required> <br> <br>
-            <input type="submit" class="btn btn-outline-dark" value="Log-in"> <br> <br>
-            <div class="divider">
-                New User?
-                <p> <br>
-                    <a href="/signup"> Sign-Up</a></p> <br>
+
+<body>
+<th:block layout:fragment="body" th:remove="tag">
+    <!-- Start of body content specific to page -->
+    <div class="px-5 py-5 mx-auto">
+        <h1><strong>Top Music Platforms</strong></h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{/images/Spotify.jpeg}" alt="Java Development" height="250">
+                    <div class="card-body">
+                    <h5 class="card-title">Spotify</h5>
+                    <p class="card-text">
+                        <ol>
+                            <li>Spotify is a Swedish audio streaming platform and was founded on founded on April 23, 2006 by its creators, Daniel Ek and Martin Lorentzon. As of 2022, Spotify has 433 million active users monthly, listening to the millions of songs and podcasts on its database. </li>
+                        </ol>
+                    </p>
+                    <a href="https://open.spotify.com/" class="btn btn-primary">Click to go to the Spotify Website</a>
+                    </div>
+                </div>
             </div>
-        </form>
-    </center>  
-    </body>
-        <style>
-        h1 {
-            text-align: center;
-            font-size: 24px;
-        }
-        body {
-            /* margin: 0;
-            padding: 0; */
-            /* background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF); */
-            /* height: 100vh;
-            justify-content: center;
-            align-items: center; */
-            background:linear-gradient(#0e071b, #230a4d);
-        }
-        form {
-            width: 50%;
-            height: 95%;
-            background-color: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0px 25px 40px rgb(190, 186, 238);
-        }
-        hr {
-            width: 5%
-        }
-        .left {
-            float:left;
-        } 
-        .right {
-            float:right;
-        }
-        .divider {
-            width:20%;
-            text-align:center;
-        }
-        .divider hr {
-            margin-left:auto;
-            margin-right:auto;
-            width:15%;  
-        }
-        </style>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{/images/apple-music.jpg}" alt="Spring Development" height="250">
+                    <div class="card-body">
+                    <h5 class="card-title">Apple Music</h5>
+                    <p class="card-text">
+                        <ol>
+                            <li>Apple Music is a platform to stream various audio and video formats of content and was first launched by Apple Inc. on June 30, 2015". With Apple Music, content can be streamed in lossless quality and downloaded for offline playback. </li>
+                        </ol>
+                    </p>
+                    <a href="https://www.apple.com/apple-music/" class="btn btn-primary">Click to go to the Apple Music Website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" th:src="@{/images/youtube-music.jpeg}" alt="Java Persistence" height="250">
+                    <div class="card-body">
+                    <h5 class="card-title">YouTube Music</h5>
+                    <p class="card-text">
+                        <ol>
+                            <li>YouTube Music is a music streaming platform, that was launched by YouTube on November 12, 2015. YouTube Music is free to use, unlike Apple Music and provide the option to upgrade to a YouTube Music premium membership, for ad-free streaming.</li>
+                        </ol>
+                    </p>
+                    <a href="https://music.youtube.com/" class="btn btn-primary">Click to go to the YouTube Music Website</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
     <!-- End of body content specific to page -->
 </th:block>
 </body>
 
 </html>
+  </div>
+
+</article>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/RAYJ-final/"></data>
