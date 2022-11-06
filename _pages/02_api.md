@@ -8,5 +8,4 @@ week: 6
 
 {% include nav_data.html %}
 
-</div>
 
