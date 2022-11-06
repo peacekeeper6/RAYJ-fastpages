@@ -13,4 +13,4 @@ This site is built with [fastpages](https://github.com/fastai/fastpages)
 <!-- - 2021-2022 Archives: <a href="https://padlet.com/jmortensen7/csa2022tri1">Fall</a>, <a href="https://padlet.com/jmortensen7/csa2022tri2">Early Winter</a>, <a href="https://csacoders.nighthawkcodingsociety.com/">Late Winter, Spring</a> -->
 
 
-![QR Code]({{site.baseurl}}/images/qr_code.png)
+<!-- ![QR Code]({{site.baseurl}}/images/qr_code.png) -->
