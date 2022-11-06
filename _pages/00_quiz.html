@@ -166,7 +166,6 @@ function generateQuestions (index) {
 
 function loadNextQuestion () {
     const selectedOption = document.querySelector('input[type="radio"]:checked');
-    //Check if there is a radio input checked
     if(!selectedOption) {
         alert('Please select your answer!');
         return;
@@ -321,23 +320,16 @@ function loadNextQuestion () {
     generateQuestions(currentQuestion);
 }
 
-//Function to load previous question
 function loadPreviousQuestion() {
-    //Decrement quentions index
     currentQuestion--;
-    //remove last array value;
     score.pop();
-    //Generate the question
     generateQuestions(currentQuestion);
 }
 
-//Fuction to reset and restart the quiz;
 function restartQuiz(e) {
     if(e.target.matches('button')) {
-    //reset array index and score
     currentQuestion = 0;
     score = [];
-    //Reload quiz to the start
     location.reload();
     }
 
