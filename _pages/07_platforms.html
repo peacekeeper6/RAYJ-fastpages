@@ -1,11 +1,12 @@
-<!DOCTYPE HTML>
-
-<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{layouts/base}" lang="en">
+---
+layout: page
+permalink: /platforms/
+title: Platforms
+---
 
 <head>
     <meta charset="utf-8">
-    <title>Top Music Platorms</title>
+    <title>Top Music Platforms for Streaming</title>
 </head>
 
 <body>
@@ -13,10 +14,13 @@
     <!-- Start of body content specific to page -->
     <div class="px-5 py-5 mx-auto">
         <h1><strong>Top Music Platforms</strong></h1>
+        <br>
+        <br>
+        <br>
         <div class="row">
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top" th:src="@{/images/Spotify.jpeg}" alt="Java Development" height="250">
+                    <img src="{{site.baseurl}}//images/Spotify.jpeg" height="150" width="900"  alt="">
                     <div class="card-body">
                     <h5 class="card-title">Spotify</h5>
                     <p class="card-text">
@@ -28,9 +32,14 @@
                     </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+            <br>
+
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top" th:src="@{/images/apple-music.jpg}" alt="Spring Development" height="250">
+                    <img src="{{site.baseurl}}//images/apple-music.jpeg" height="150" width="800" alt="">
                     <div class="card-body">
                     <h5 class="card-title">Apple Music</h5>
                     <p class="card-text">
@@ -42,9 +51,14 @@
                     </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+            <br>
+
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top" th:src="@{/images/youtube-music.jpeg}" alt="Java Persistence" height="250">
+                    <img src="{{site.baseurl}}//images/youtube-music.jpeg" height="150" width="800"  alt="">
                     <div class="card-body">
                     <h5 class="card-title">YouTube Music</h5>
                     <p class="card-text">
