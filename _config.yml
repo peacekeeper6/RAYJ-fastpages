@@ -40,7 +40,7 @@ baseurl: "/RAYJ-final" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     twitter: NighthawkCoding
-    github: nighthawkcoders
+    github: peacekeeper6
     youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
 
 # Set this to true to get LaTeX math equation support
