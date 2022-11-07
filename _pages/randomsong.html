@@ -45,6 +45,8 @@ image: images/logo.png
                 },
                 };
                 function randomSong(data, songID) {
+                  console.log(data)
+                  console.log(songID)
                   let random = Math.floor(Math.random() * 20);
                   document.getElementById(songID).innerHTML = data.tracks.at(random).share.subject;
                 }
@@ -74,7 +76,7 @@ image: images/logo.png
                           // td for joke cell
                           const song = document.createElement("td");
                             song.id = "song"+i;
-                            song.innerHTML = randomSong();  // add fetched data to innerHTML
+                            song.innerHTML = randomSong(data, song.id);  // add fetched data to innerHTML
               
                           // td for like cell with onclick actions
                           const generate = document.createElement("td");
