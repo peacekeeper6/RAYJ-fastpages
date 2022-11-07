@@ -69,7 +69,8 @@ image: images/logo.png
                         for (let i = 0; i < 5; i++) {
                           let random = Math.floor(Math.random() * 100);
                           console.log(data.tracks)
-                          console.log(data.tracks[random])
+                          console.log(random)
+                          console.log(data.tracks[parseInt(random)])
                           console.log(data.tracks[random].share)
                           console.log(data.tracks[random].share.subject)
                           // document.getElementById("recommended").innerHTML = data.tracks[random].share.subject
