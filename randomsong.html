@@ -109,8 +109,8 @@ window.onload = wrap_img;
                         // 'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 };
-                function randomSong(songID) {
-                  let random = Math.floor(Math.random() * 100);
+                function randomSong(data, songID) {
+                  let random = Math.floor(Math.random() * 20);
                   document.getElementById(songID).innerHTML = data.tracks.at(random).share.subject;
                 }
                 // fetch the API
@@ -148,7 +148,7 @@ window.onload = wrap_img;
                             generate_but.innerHTML = "New Song!";  // add fetched "like count" to innerHTML
                             generate_but.onclick = function () {
                               // onclick function call with "like parameters"
-                              randomSong(song.id);  
+                              randomSong(data, song.id);  
                             };
                             generate.appendChild(generate_but);  // add "like button" to like cell
               
