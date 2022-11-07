@@ -17,10 +17,8 @@ image: images/logo.png
             <table>
                 <thead>
                 <tr>
-                  <th>Song Name</th>
-                  <th>Artist</th>
-                  <th>Image Link</th>
-                  <th>Award</th>
+                  <th>Song</th>
+                  <th>Generate</th>
                 </tr>
                 </thead>
                 <tbody id="result">
@@ -32,7 +30,7 @@ image: images/logo.png
               <script>
                 // prepare HTML result container for new output
                 const resultContainer = document.getElementById("result");
-              
+                const GENERATE = "generate";
                 // prepare fetch options
                 const url = "https://music.nighthawkcoders.tk/api/hot/100";
               
@@ -46,14 +44,17 @@ image: images/logo.png
                         // 'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 };
-              
+                function randomSong(songID) {
+                  let random = Math.floor(Math.random() * 100);
+                  document.getElementById(songID).innerHTML = data.tracks.at(random).share.subject;
+                }
                 // fetch the API
                 fetch(url, options)
                   // response is a RESTful "promise" on any successful fetch
                   .then(response => {
                     // check for response errors
                     if (response.status !== 200) {
-                        const errorMsg = 'Database response error: ' + response.status;
+                        const errorMsg = 'API response error: ' + response.status;
                         console.log(errorMsg);
                         const tr = document.createElement("tr");
                         const td = document.createElement("td");
@@ -67,13 +68,31 @@ image: images/logo.png
                         console.log(data);
                         // Country data
                         for (let i = 0; i < 5; i++) {
-                          let random = Math.floor(Math.random() * 100);
-                          console.log(data.tracks)
-                          console.log(random)
-                          console.log(data.tracks.at(random))
-                          console.log(data.tracks.at(random).share)
-                          console.log(data.tracks.at(random).share.subject)
-                          // document.getElementById("recommended").innerHTML = data.tracks[random].share.subject
+                          // make "tr element" for each "row of data"
+                          const tr = document.createElement("tr");
+                          
+                          // td for joke cell
+                          const song = document.createElement("td");
+                            song.id = "song"+i;
+                            song.innerHTML = randomSong();  // add fetched data to innerHTML
+              
+                          // td for like cell with onclick actions
+                          const generate = document.createElement("td");
+                            const generate_but = document.createElement('button');
+                            generate_but.id = GENERATE+i   // establishes a LIKE JS id for cell
+                            generate_but.innerHTML = "New Song!";  // add fetched "like count" to innerHTML
+                            generate_but.onclick = function () {
+                              // onclick function call with "like parameters"
+                              randomSong(song.id);  
+                            };
+                            generate.appendChild(generate_but);  // add "like button" to like cell
+              
+                          // this builds ALL td's (cells) into tr (row) element
+                          tr.appendChild(song);
+                          tr.appendChild(generate);
+              
+                          // this adds all the tr (row) work above to the HTML "result" container
+                          resultContainer.appendChild(tr);
                       }
                     })
                 })
