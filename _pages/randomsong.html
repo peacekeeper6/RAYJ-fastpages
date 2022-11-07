@@ -70,9 +70,9 @@ image: images/logo.png
                           let random = Math.floor(Math.random() * 100);
                           console.log(data.tracks)
                           console.log(random)
-                          console.log(data.tracks[parseInt(random)])
-                          console.log(data.tracks[random].share)
-                          console.log(data.tracks[random].share.subject)
+                          console.log(data.tracks.at(random))
+                          console.log(data.tracks.at(random).share)
+                          console.log(data.tracks.at(random).share.subject)
                           // document.getElementById("recommended").innerHTML = data.tracks[random].share.subject
                       }
                     })
