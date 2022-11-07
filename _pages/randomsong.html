@@ -1,13 +1,12 @@
 ---
 layout: home
 search_exclude: true
-permalink: /randomsong
 image: images/logo.png
 ---
 
 
-<center><h3>Bored of all your songs?</h3><center>
-<h5>Look no further!<h5>
+<center><h3>Bored of all your songs??</h3><center>
+
 
   <div>
     <hr>
@@ -65,8 +64,14 @@ image: images/logo.png
                     response.json().then(data => {
                         console.log(data);
                         // Country data
-                        var random = Math.floor(Math.random() * 100);
-                        document.getElementById("recommended").innerHTML = data.tracks[random].share.subject
+                        for (let i = 0; i < 5; i++) {
+                          let random = Math.floor(Math.random() * 100);
+                          console.log(data.tracks)
+                          console.log(data.tracks[random])
+                          console.log(data.tracks[random].share)
+                          console.log(data.tracks[random].share.subject)
+                          // document.getElementById("recommended").innerHTML = data.tracks[random].share.subject
+                      }
                     })
                 })
                 // catch fetch errors (ie ACCESS to server blocked)
