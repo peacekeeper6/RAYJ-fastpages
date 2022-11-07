@@ -110,9 +110,14 @@ window.onload = wrap_img;
                 },
                 };
                 function randomSong(data, songID) {
-                  console.log(data)
                   console.log(songID)
                   let random = Math.floor(Math.random() * 20);
+                  console.log(data)
+                  console.log(data.tracks)
+                  console.log(random)
+                  console.log(data.tracks.at(random))
+                  console.log(data.tracks.at(random).share)
+                  console.log(data.tracks.at(random).share.subject)
                   document.getElementById(songID).innerHTML = data.tracks.at(random).share.subject;
                 }
                 // fetch the API
