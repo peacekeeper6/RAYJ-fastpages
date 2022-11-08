@@ -251,7 +251,7 @@ window.onload = wrap_img;
         // valid response will have JSON data
         response.json().then(data => {
             console.log(data);
-            for (let i = 0; i < count; i++) {
+            for (let i = 1; i <= count; i++) {
               // Likes or Jeers updated/incremented
               document.getElementById("dislike"+i).innerHTML = data.likes;  // fetched like data assigned to like Document Object Model (DOM)
               document.getElementById("like"+i).innerHTML = data.dislikes;  // fetched dislike data assigned to dislike Document Object Model (DOM)
