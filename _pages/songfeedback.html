@@ -66,7 +66,7 @@ week: 6
     };
     // prepare fetch PUT options, clones with JS Spread Operator (...)
     const put_options = {...options, method: 'PUT'}; // clones and replaces method
-  
+    let count = 0;
     // fetch the API
     fetch(get_url, options)
       // response is a RESTful "promise" on any successful fetch
@@ -116,6 +116,7 @@ week: 6
   
               // this adds all the tr (row) work above to the HTML "result" container
               resultContainer.appendChild(tr);
+              count++;
             }
         })
     })
@@ -170,6 +171,31 @@ week: 6
       tr.appendChild(td);
       resultContainer.appendChild(tr);
     }
+    function update() {
+      fetch(get_url, options)
+      // response is a RESTful "promise" on any successful fetch
+      .then(response => {
+        // check for response errors
+        if (response.status !== 200) {
+            error("PUT API response failure: " + response.status)
+            return;  // api failure
+        }
+        // valid response will have JSON data
+        response.json().then(data => {
+            console.log(data);
+            for (let i = 0; i < count; i++) {
+              // Likes or Jeers updated/incremented
+              document.getElementById("dislike"+i).innerHTML = data.likes;  // fetched like data assigned to like Document Object Model (DOM)
+              document.getElementById("like"+i).innerHTML = data.dislikes;  // fetched dislike data assigned to dislike Document Object Model (DOM)
+            }
+        })
+      })
+      // catch fetch errors (ie Nginx ACCESS to server blocked)
+      .catch(err => {
+        error(err + " " + put_url);
+      });
+    }
+    setInterval(update, 5000)
   
   </script>
 <center><h2 id="feedback"></h2></center>
