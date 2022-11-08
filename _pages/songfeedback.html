@@ -185,8 +185,8 @@ week: 6
             console.log(data);
             for (let i = 1; i <= count; i++) {
               // Likes or Jeers updated/incremented
-              document.getElementById("dislike"+i).innerHTML = data.likes;  // fetched like data assigned to like Document Object Model (DOM)
-              document.getElementById("like"+i).innerHTML = data.dislikes;  // fetched dislike data assigned to dislike Document Object Model (DOM)
+              document.getElementById("like"+i).innerHTML = data.at(i-1).likes;  // fetched like data assigned to like Document Object Model (DOM)
+              document.getElementById("dislike"+i).innerHTML = data.at(i-1).dislikes;  // fetched dislike data assigned to dislike Document Object Model (DOM)
             }
         })
       })
